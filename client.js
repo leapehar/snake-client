@@ -21,7 +21,17 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write("Name: LEA");
+
+    //moving the snake using setTimeout and setInterval:
+
+    //setTimeout(() => conn.write("Move: up"), 500);
+    //setTimeout(() => conn.write("Move: up"), 1000);
+    //setInterval(() => conn.write("Move: up"), 1000);
+
+    //conn.write("Move: up");
   });
+
+
 
   return conn;
 };

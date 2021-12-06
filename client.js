@@ -5,7 +5,7 @@ const net = require("net");
 const connect = function() {
   const conn = net.createConnection({
     host: "localhost",
-    port: 50541,
+    port: 50541
   });
 
   // interpret incoming data as text
@@ -28,7 +28,7 @@ const connect = function() {
     //setTimeout(() => conn.write("Move: up"), 1000);
     //setInterval(() => conn.write("Move: up"), 1000);
 
-    //conn.write("Move: up");
+    // conn.write("Move: up");
   });
 
 
@@ -36,7 +36,7 @@ const connect = function() {
   return conn;
 };
 
-console.log("Connecting ...");
-// connect();
+//console.log("Connecting ...");
+
 
 module.exports = { connect };
